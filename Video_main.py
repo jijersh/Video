@@ -349,7 +349,7 @@ class MediaToBuildGUI:
 
     def __init__(self, root: ttk.Window):
         self.root = root
-        self.root.title("Media to Roblox Animation Converter")
+        self.root.title("Media Converter")
         self.style = ttk.Style(theme='darkly')
         self.config = ProcessingConfig()
         self.media_path: Optional[Path] = None
@@ -365,7 +365,7 @@ class MediaToBuildGUI:
         main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
         # Header
-        ttk.Label(main_frame, text="Media to Roblox Converter", font=("Helvetica", 18, "bold")).grid(row=0, column=0, columnspan=3, pady=15)
+        ttk.Label(main_frame, text="Media Converter", font=("Helvetica", 18, "bold")).grid(row=0, column=0, columnspan=3, pady=15)
 
         # Section 1: Media Selection
         media_frame = ttk.LabelFrame(main_frame, text="1. Select Media", padding=15)
